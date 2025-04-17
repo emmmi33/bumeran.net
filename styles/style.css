@@ -277,10 +277,10 @@ header nav ul li {
 #contacto {
   grid-area: contacto;
   display: grid;
-  grid-template-areas: "section_left section_right";
+  grid-template-areas: "seccion_centro";
   margin-top: 148px;
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 
   column-gap: 32px;
   row-gap: 24px;

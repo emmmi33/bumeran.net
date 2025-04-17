@@ -75,7 +75,7 @@ p {
   font-size: var(--p-font-size);
   font-weight: var(--p-font-weight);
   padding-block-start: 8px;
-  padding-block-end: 24px;
+  padding-block-end: 8px;
 }
 
 /* Links */
@@ -458,6 +458,20 @@ li img {
 
 /* Formulario inputs */
 .formulario_input_label input {
+  font-family: var(--font-family);
+  font-size: var(--label-font-size);
+
+  color: var(--gray-60-outline-color);
+
+  border: 1px solid var(--gray-60-outline-color);
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.formulario_input_label textarea {
   font-family: var(--font-family);
   font-size: var(--label-font-size);
 

@@ -98,7 +98,7 @@ a:hover {
   display: grid;
   max-width: 100%;
   max-height: 100vh;
-  
+
   grid-template-areas:
     "header header"
     "principal principal"
@@ -190,7 +190,7 @@ header a:hover {
   align-items: flex-end;
 }
 
-/* Seccion principal pagina interna*/
+/* Sección principal pagina interna*/
 #interna_ppal {
   grid-area: principal;
   max-width: 100%;
@@ -202,7 +202,7 @@ header a:hover {
   margin-top: 148px;
 }
 
-/* Seccion quienes somos */
+/* Sección quienes somos */
 #quienes_somos {
   grid-area: quienes_somos;
   display: grid;
@@ -234,7 +234,7 @@ header a:hover {
   align-content: center;
 }
 
-/* Seccion Trabajos */
+/* Sección Trabajos */
 #trabajos {
   grid-area: trabajos;
 }
@@ -245,12 +245,12 @@ header a:hover {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-    
+
   gap: 32px;
   margin: 24px 0;
 }
 
-/* Seccion Servicios */
+/* Sección Servicios */
 #servicios {
   grid-area: servicios;
   display: grid;
@@ -282,7 +282,7 @@ header a:hover {
 }
 
 
-/* Seccion Contacto */
+/* Sección Contacto */
 
 #contacto {
   grid-area: contacto;
@@ -296,8 +296,8 @@ header a:hover {
 #contacto_form {
   grid-area: contacto;
   display: grid;
-  grid-template-areas: 
-  "section_left section_right";
+  grid-template-areas:
+    "section_left section_right";
   margin-top: 148px;
 
   grid-template-columns: 1fr 1fr;
@@ -473,7 +473,7 @@ li img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-    
+
   background-color: var(--main-bg-color);
   padding: 24px;
   padding-bottom: 48px;
@@ -518,7 +518,7 @@ li img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
+
   background-color: var(--gray-10-bg-color);
 
   border: 1px solid var(--gray-10-bg-color);
@@ -563,4 +563,267 @@ li img {
   padding-top: 4px;
   padding-bottom: 4px;
   margin: 12px 0;
+}
+
+/* RESPONSIVE hasta 768px */
+
+@media screen and (max-width: 768px) {
+
+  /* Estilos textos */
+  /* Titulos */
+  h1 {
+    font-size: 24px;
+    padding-block-end: 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+    padding-block-end: 16px;
+  }
+
+  h3 {
+    font-size: 20px;
+    padding-block-end: 16px;
+  }
+
+  h4 {
+    font-size: 16px;
+    padding-block-end: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #grid {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  /* Sección principal */
+  #principal {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    margin-top: 120px;
+
+    row-gap: 16px;
+
+    justify-content: center;
+
+    background-image: url(../img/img_background.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  /* Sección principal pagina interna*/
+  #interna_ppal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100dvh;
+    margin-top: 120px;
+
+    row-gap: 16px;
+  }
+
+  /* Sección quienes somos */
+  #quienes_somos {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100dvw;
+
+    row-gap: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  #quienes_somos_interna {
+    display: flex;
+    max-width: 100dvw;
+  }
+
+  #quienes_somos .seccion_bg_color {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100dvw;
+
+    padding-top: 24px;
+    padding-bottom: 24px
+  }
+
+  #quienes_somos .seccion_bg_blanco {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100dvw;
+
+    padding-top: 24px;
+    padding-bottom: 24px
+  }
+
+  /* Sección Trabajos */
+  #trabajos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #trabajos_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+    margin: 24px 0;
+  }
+
+  /* Sección Servicios */
+  #servicios {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100dvw;
+
+    row-gap: 24px;
+
+    justify-content: center;
+    align-items: start;
+
+    row-gap: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  #servicios_interna {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100dvh;
+    margin-top: 0px;
+  }
+
+  /* Sección Contacto */
+
+  #contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 24px;
+  }
+
+  #contacto_form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    height: auto;
+    width: 100dvw;
+
+    row-gap: 16px;
+
+    justify-content: center;
+    align-items: center;
+    padding: 24px 24px;
+  }
+
+  #contacto_botones {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+
+  #formulario .section_right {
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+  }
+
+  /* Footer */
+  #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px;
+  }
+
+  footer nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Features */
+  /* Features */
+  li img {
+    margin-right: 12px;
+  }
+
+  #features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #features .features_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 0;
+
+  }
+
+  #features .features_solo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-left: 0px;
+    padding-bottom: 24px;
+  }
+
+  /* Card */
+  .card {
+    align-items: center;
+    max-width: 328px;
+
+    padding: 24px 16px;
+    margin: 0 48px;
+
+    border-radius: 8px;
+  }
+
+  .card img {
+    max-width: 280px;
+  }
+
+
+  #tabla_precios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    max-height: auto;
+  }
+
+  #tabla_precios .precio {
+    padding-top: 24px;
+    text-align: center;
+  }
+
+  ol, ul {
+  padding-left: 0px;
+  }
+
 }

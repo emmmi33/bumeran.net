@@ -6,7 +6,8 @@
   --main-button-color: #ffbf69;
   --secondary-button-outline-color: #ffbf69;
   --light-bg-color: #e7f9f8;
-  ;
+  --link-hover-color: #3dccc7;
+
   --gray-10-bg-color: #e5e8e8;
   --gray-30-button-color: #b2baba;
   --gray-60-outline-color: #6b7676;
@@ -81,7 +82,7 @@ p {
 /* Links */
 /* Link general */
 a:link {
-  color: var(--main-title-color);
+  color: var(--main-text-color);
   font-weight: var(--link-font-weight);
   text-decoration: none;
 }
@@ -91,12 +92,28 @@ a:hover {
   font-weight: 800;
 }
 
+/* Link footer */
+footer a:link {
+  color: var(--main-bg-color);
+  font-weight: 400;
+}
+
+footer a:hover {
+  font-weight: var(--link-font-weight);
+}
+
+/* Imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* LAYOUT */
 
 /* Grid */
 #grid {
   display: grid;
-  max-width: 100%;
+  max-width: 100dvw;
   max-height: 100vh;
 
   grid-template-areas:
@@ -110,8 +127,6 @@ a:hover {
   grid-template-columns: 1fr 1fr;
 
   grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr auto;
-
-  column-gap: 32px;
 
   padding: 0 auto;
 }
@@ -160,6 +175,11 @@ header a:hover {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+  max-width: 512px;
+
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 #principal h1 {
@@ -173,6 +193,11 @@ header a:hover {
 /* Sección derecha */
 .section_right {
   align-items: center;
+
+  max-width: 512px;
+
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .section_right h3 {
@@ -200,6 +225,8 @@ header a:hover {
   justify-content: flex-start;
 
   margin-top: 148px;
+  margin-left: 48px;
+  margin-right: 48px;
 }
 
 /* Sección quienes somos */
@@ -217,6 +244,7 @@ header a:hover {
 
   justify-content: center;
   align-items: start;
+  justify-items: center;
 }
 
 #quienes_somos_interna {
@@ -237,17 +265,21 @@ header a:hover {
 /* Sección Trabajos */
 #trabajos {
   grid-area: trabajos;
+
+  margin-left: 48px;
+  margin-right: 48px;
+  padding-bottom: 48px;
 }
 
 #trabajos_card {
   grid-area: trabajos;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
 
   gap: 32px;
-  margin: 24px 0;
+  margin: 24px 24px;
 }
 
 /* Sección Servicios */
@@ -279,6 +311,8 @@ header a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding-bottom: 48px;
 }
 
 
@@ -298,17 +332,14 @@ header a:hover {
   display: grid;
   grid-template-areas:
     "section_left section_right";
-  margin-top: 148px;
-
+  
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto;
 
   column-gap: 32px;
-  row-gap: 24px;
 
   justify-content: center;
   align-items: start;
-  padding: 48px 48px;
+  padding-bottom: 48px;
 }
 
 #contacto_botones {
@@ -328,7 +359,7 @@ footer {
   background-color: var(--main-text-color);
   font-family: var(--font-family);
   grid-area: footer;
-  max-width: 100%;
+  min-width: 100vw;
 }
 
 #footer {
@@ -336,6 +367,9 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 12px 12px;
+
+  margin-left: 48px;
+  margin-right: 48px;
 }
 
 footer nav ul {
@@ -417,7 +451,8 @@ footer a:hover {
 
   text-align: center;
   padding-top: 24px;
-  padding-bottom: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 /* Features */
@@ -440,6 +475,7 @@ li img {
 
 .solo_tag {
   color: var(--main-text-color);
+  text-align: center;
 
   border: 1px solid var(--gray-60-outline-color);
   border-radius: 24px;
@@ -453,6 +489,8 @@ li img {
 #features {
   display: flex;
   justify-content: space-around;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 #features .features_icon {
@@ -472,7 +510,7 @@ li img {
   position: static;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 
   background-color: var(--main-bg-color);
   padding: 24px;
@@ -493,7 +531,10 @@ li img {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  gap: 32px;
+  gap: 16px;
+
+  margin-left: 48px;
+  margin-right: 48px;
 
   max-height: auto;
 }
@@ -565,30 +606,133 @@ li img {
   margin: 12px 0;
 }
 
-/* RESPONSIVE hasta 768px */
+/* RESPONSIVE */ 
 
+/* más de 1024px */
+@media screen and (max-width: 1024px) {
+  #grid {
+    max-width: 100dvw;
+    margin: auto;
+    align-items: center;
+  }
+
+  header {
+    max-width: 100vw;
+  }
+
+  #principal {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+  }
+
+  #quienes_somos {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+  }
+
+  #trabajos {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+  }
+
+  #servicios {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+  }
+
+  #contacto {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+  }
+
+  #interna_ppal {
+    max-width: 1024px;
+    margin: auto;
+    margin-left: 48px;
+    margin-right: 48px;
+    align-items: center;
+  }
+
+  #features_solo {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+  }
+
+  #trabajos_card {
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  #servicios_interna {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+  }
+
+  #tabla_precios {
+    max-width: 1024px;
+    margin: auto;
+
+    margin-left: 48px;
+    margin-right: 48px;
+
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  #tabla_precios ol, ul {
+    padding-left: 0;
+  }
+
+  #contacto_form {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+    margin-top: 148px;
+  }
+
+  footer {
+    max-width: 100vw;
+  }  
+
+  #footer {
+    max-width: 1024px;
+    margin: auto;
+
+    align-items: center;
+  }
+  
+}
+
+/* hasta 768px */
 @media screen and (max-width: 768px) {
 
   /* Estilos textos */
   /* Titulos */
   h1 {
     font-size: 24px;
-    padding-block-end: 16px;
+    padding-block-end: 8px;
   }
 
   h2 {
     font-size: 20px;
-    padding-block-end: 16px;
+    padding-block-end: 8px;
   }
 
   h3 {
     font-size: 20px;
-    padding-block-end: 16px;
+    padding-block-end: 8px;
   }
 
   h4 {
     font-size: 16px;
-    padding-block-end: 16px;
+    padding-block-end: 8px;
   }
 
   p {
@@ -611,10 +755,6 @@ li img {
     row-gap: 16px;
 
     justify-content: center;
-
-    background-image: url(../img/img_background.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
   }
 
   /* Sección principal pagina interna*/
@@ -623,7 +763,7 @@ li img {
     flex-direction: column;
     justify-content: flex-start;
     height: 100dvh;
-    margin-top: 120px;
+    margin-top: 132px;
 
     row-gap: 16px;
   }
@@ -631,7 +771,7 @@ li img {
   /* Sección quienes somos */
   #quienes_somos {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: auto;
     width: 100dvw;
 
@@ -643,35 +783,44 @@ li img {
     align-items: center;
   }
 
+  #quienes_somos .section_right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #quienes_somos_interna .seccion_bg_color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100dvw;
+
+    padding:24px 16px;
+  }
+
+  #quienes_somos_interna .seccion_bg_blanco {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+    width: 100dvw;
+
+    padding:24px 16px;
+  }
+
   #quienes_somos_interna {
     display: flex;
     max-width: 100dvw;
-  }
-
-  #quienes_somos .seccion_bg_color {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100dvw;
-
-    padding-top: 24px;
-    padding-bottom: 24px
-  }
-
-  #quienes_somos .seccion_bg_blanco {
-    display: flex;
-    flex-direction: column-reverse;
-    height: auto;
-    width: 100dvw;
-
-    padding-top: 24px;
-    padding-bottom: 24px
   }
 
   /* Sección Trabajos */
   #trabajos {
     display: flex;
     flex-direction: column;
+    
+    padding: 24px 16px;
   }
 
   #trabajos_card {
@@ -680,8 +829,7 @@ li img {
     align-items: center;
     justify-content: center;
 
-    gap: 24px;
-    margin: 24px 0;
+    gap: 16px;
   }
 
   /* Sección Servicios */
@@ -694,11 +842,10 @@ li img {
     row-gap: 24px;
 
     justify-content: center;
-    align-items: start;
+    align-items: center;
 
     row-gap: 16px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 16px;
   }
 
   #servicios_interna {
@@ -747,6 +894,10 @@ li img {
   }
 
   /* Footer */
+  footer {
+    max-width: 100vw;
+  }
+  
   #footer {
     display: flex;
     flex-direction: column;
@@ -762,9 +913,12 @@ li img {
   }
 
   /* Features */
-  /* Features */
   li img {
-    margin-right: 12px;
+    margin-right: 8px;
+  }
+
+  .icon_tag {
+    margin: 8px 0;
   }
 
   #features {
@@ -777,7 +931,7 @@ li img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
     padding: 0;
 
   }
@@ -786,7 +940,7 @@ li img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
     padding-left: 0px;
     padding-bottom: 24px;
   }
@@ -795,9 +949,10 @@ li img {
   .card {
     align-items: center;
     max-width: 328px;
+    min-width: 300px;
 
-    padding: 24px 16px;
-    margin: 0 48px;
+    padding: 16px;
+    margin: 16px;
 
     border-radius: 8px;
   }
@@ -822,8 +977,9 @@ li img {
     text-align: center;
   }
 
-  ol, ul {
-  padding-left: 0px;
+  ol,
+  ul {
+    padding-left: 0px;
   }
 
 }

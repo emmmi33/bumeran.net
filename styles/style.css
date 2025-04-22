@@ -134,19 +134,25 @@ img {
 /* Header */
 header {
   grid-area: header;
-  background-color: var(--main-bg-color);
+  background-color: #f8f9fa;
   color: var(--main-text-color);
   font-family: var(--font-family);
 
   box-shadow: 0px 2px 16px rgba(1, 27, 26, 0.12);
 
   position: fixed;
-  width: 100dvw;
+  width: 100vw;
   top: 0;
 }
 
 header a:hover {
   color: var(--main-text-color);
+}
+
+/* Header */
+#header {
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 /* Sección principal */
@@ -187,7 +193,7 @@ header a:hover {
 }
 
 .section_left h3 {
-  text-align: center;
+  text-align: left;
 }
 
 /* Sección derecha */

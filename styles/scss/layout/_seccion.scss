@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as var;
+
+.seccion_bg_color {
+    background-color: var.$gray_10;
+}
+
+.seccion_bg_blanco {
+    background-color: var.$main_bg;
+}
+
+.section_center {
+    background-color: var.$main_bg;
+
+    text-align: center;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}

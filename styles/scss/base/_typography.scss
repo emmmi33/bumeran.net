@@ -70,9 +70,17 @@ input {
   font-size: 16px;
 }
 
-//Textarea formulario
+// Textarea formulario
 textarea {
   color: var.$gray_60;
   font-family: $font_family;
   font-size: 16px;
+}
+
+// Listas
+li {
+  color: var.$main_text;
+  font-family: $font_family;
+  font-size: 16px;
+  font-weight: 600;
 }

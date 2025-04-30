@@ -9,6 +9,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+ul li img {
+  margin-right: 12px;
+}
 
 img {
   max-width: 100%;
@@ -85,6 +88,13 @@ textarea {
   color: #6b7676;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
+}
+
+li {
+  color: #011b1a;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 header {
@@ -172,8 +182,38 @@ footer nav ul ahover {
   background-color: #ffffff;
   box-shadow: 0px 2px 16px rgba(1, 27, 26, 0.12);
 }
+.card:hover {
+  background-color: #e5e8e8;
+  border: 0px;
+  font-weight: 600;
+}
 .card img {
   max-width: 280px;
+}
+
+.icon_tag {
+  color: #011b1a;
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.solo_tag {
+  text-align: center;
+  border: 1px solid #6b7676;
+  border-radius: 24px;
+  padding: 8px 24px;
+}
+
+.features_icon {
+  display: flex;
+  gap: 32px;
+}
+
+.features_solo {
+  display: flex;
+  gap: 32px;
+  padding-bottom: 48px;
 }
 
 /*# sourceMappingURL=style.css.map */

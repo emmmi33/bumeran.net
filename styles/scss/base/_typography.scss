@@ -9,6 +9,11 @@ h1 {
     font-size: 48px;
     font-weight: 600;
     padding-block-end: 24px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      padding-block-end: 8px;
+    }   
 }
   
 h2 {
@@ -17,6 +22,11 @@ h2 {
   font-size: 32px;
   font-weight: 600;
   padding-block-end: 24px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    padding-block-end: 8px;
+  }
 }
 
 h3 {
@@ -25,6 +35,11 @@ h3 {
   font-size: 24px;
   font-weight: 600;
   padding-block-end: 24px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    padding-block-end: 8px;
+  }
 }
 
 h4 {
@@ -34,6 +49,11 @@ h4 {
   font-weight: 600;
   text-transform: uppercase;
   padding-block-end: 24px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    padding-block-end: 8px;
+  }
 }
 
 // Parrafo
@@ -44,6 +64,7 @@ p {
   font-weight: 400;
   padding-block-start: 8px;
   padding-block-end: 8px;
+  margin-bottom: 8px;
 
   a {
     color: var.$main_button;

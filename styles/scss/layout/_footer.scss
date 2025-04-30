@@ -8,11 +8,23 @@ footer {
     grid-area: footer;
     min-width: 100vw;
 
+    // hasta 768px
+    @media screen and (max-width: 768px) {
+        max-width: 100vw;
+    }
+
     nav {
         ul {
             display: flex;
             align-content: flex-end;
             list-style-type: none;
+
+                // hasta 768px
+                @media screen and (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
 
             li {
                 padding: 8px;
@@ -33,7 +45,15 @@ footer {
     align-items: center;
     padding: 12px 12px;
 
-    margin-left: 48px;
-    margin-right: 48px;
+    margin: 0px 48px;
+    
+    // hasta 768px
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 12px;  
+    }
 }
 

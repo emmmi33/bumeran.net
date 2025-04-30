@@ -12,6 +12,11 @@ ul {
 ul li img {
   margin-right: 12px;
 }
+@media screen and (max-width: 768px) {
+  ul li img {
+    margin-right: 8px;
+  }
+}
 
 img {
   max-width: 100%;
@@ -29,6 +34,12 @@ h1 {
   font-weight: 600;
   padding-block-end: 24px;
 }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+    padding-block-end: 8px;
+  }
+}
 
 h2 {
   color: #011b1a;
@@ -37,6 +48,12 @@ h2 {
   font-weight: 600;
   padding-block-end: 24px;
 }
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 20px;
+    padding-block-end: 8px;
+  }
+}
 
 h3 {
   color: #011b1a;
@@ -44,6 +61,12 @@ h3 {
   font-size: 24px;
   font-weight: 600;
   padding-block-end: 24px;
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 20px;
+    padding-block-end: 8px;
+  }
 }
 
 h4 {
@@ -54,6 +77,12 @@ h4 {
   text-transform: uppercase;
   padding-block-end: 24px;
 }
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 16px;
+    padding-block-end: 8px;
+  }
+}
 
 p {
   color: #011b1a;
@@ -62,6 +91,7 @@ p {
   font-weight: 400;
   padding-block-start: 8px;
   padding-block-end: 8px;
+  margin-bottom: 8px;
 }
 p a {
   color: #ffbf69;
@@ -109,6 +139,9 @@ header {
 header a:hover {
   color: #011b1a;
 }
+header div #header {
+  padding: 0px 48px;
+}
 
 footer {
   color: #ffffff;
@@ -117,10 +150,22 @@ footer {
   grid-area: footer;
   min-width: 100vw;
 }
+@media screen and (max-width: 768px) {
+  footer {
+    max-width: 100vw;
+  }
+}
 footer nav ul {
   display: flex;
   align-content: flex-end;
   list-style-type: none;
+}
+@media screen and (max-width: 768px) {
+  footer nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 footer nav ul li {
   padding: 8px;
@@ -137,8 +182,16 @@ footer nav ul a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 12px 12px;
-  margin-left: 48px;
-  margin-right: 48px;
+  margin: 0px 48px;
+}
+@media screen and (max-width: 768px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px;
+  }
 }
 
 div #grid {
@@ -150,6 +203,20 @@ div #grid {
   grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr auto;
   padding: 0 auto;
 }
+@media screen and (max-width: 1024px) {
+  div #grid {
+    max-width: 100dvw;
+    margin: auto;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  div #grid {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+}
 
 .section_left {
   display: flex;
@@ -157,7 +224,7 @@ div #grid {
   flex-direction: column;
   justify-content: center;
   max-width: 512px;
-  padding-left: 0px 24px;
+  padding: 0px 24px;
 }
 .section_left h3 {
   text-align: left;
@@ -198,8 +265,25 @@ section #principal {
 section #principal h1 {
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  section #principal {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  section #principal {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    margin-top: 120px;
+    row-gap: 16px;
+    justify-content: center;
+  }
+}
 
-#interna_ppal {
+section #interna_ppal {
   grid-area: principal;
   max-width: 100%;
   max-height: auto;
@@ -207,6 +291,24 @@ section #principal h1 {
   flex-direction: column;
   justify-content: flex-start;
   margin: 148px 48px 0px;
+}
+@media screen and (max-width: 1024px) {
+  section #interna_ppal {
+    max-width: 1024px;
+    margin: auto;
+    margin: 0px 48px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  section #interna_ppal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100dvh;
+    margin-top: 132px;
+    row-gap: 16px;
+  }
 }
 
 div #quienes_somos {
@@ -227,17 +329,78 @@ div #quienes_somos .section_left {
 div #quienes_somos .section_right {
   align-content: center;
 }
+@media screen and (max-width: 1024px) {
+  div #quienes_somos {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  div #quienes_somos {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100dvw;
+    row-gap: 16px;
+    padding: 24px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  div #quienes_somos .section_right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
-#quienes_somos_interna {
+div #quienes_somos_interna {
   grid-area: quienes_somos;
   display: flex;
   flex-direction: column;
   max-width: 100%;
 }
+div #quienes_somos_interna .seccion_bg_color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100dvw;
+  padding: 24px 16px;
+}
+div #quienes_somos_interna .seccion_bg_blanco {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  height: auto;
+  width: 100dvw;
+  padding: 24px 16px;
+}
+@media screen and (max-width: 768px) {
+  div #quienes_somos_interna {
+    display: flex;
+    max-width: 100dvw;
+  }
+}
 
 div #trabajos {
   grid-area: trabajos;
   margin: 0px 48px 48px;
+}
+@media screen and (max-width: 1024px) {
+  div #trabajos {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  div #trabajos {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+  }
 }
 
 div #trabajos_card {
@@ -248,6 +411,21 @@ div #trabajos_card {
   justify-content: center;
   gap: 32px;
   margin: 24px 24px;
+}
+@media screen and (max-width: 1024px) {
+  div #trabajos_card {
+    align-items: stretch;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  div #trabajos_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
 }
 
 div #servicios {
@@ -267,6 +445,26 @@ div #servicios .section_left {
 div #servicios .section_right {
   align-content: center;
 }
+@media screen and (max-width: 1024px) {
+  div #servicios {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  div #servicios {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100dvw;
+    row-gap: 24px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+    padding: 24px 16px;
+  }
+}
 
 div #servicios_interna {
   grid-area: servicios;
@@ -274,6 +472,22 @@ div #servicios_interna {
   flex-direction: column;
   align-items: center;
   padding-bottom: 48px;
+}
+@media screen and (max-width: 1024px) {
+  div #servicios_interna {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  div #servicios_interna {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100dvh;
+    margin-top: 0px;
+  }
 }
 
 div #contacto {
@@ -283,6 +497,22 @@ div #contacto {
   justify-content: center;
   align-items: center;
   padding: 48px 48px;
+}
+@media screen and (max-width: 1024px) {
+  div #contacto {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  div #contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 24px;
+  }
 }
 
 div #contacto_form {
@@ -295,15 +525,111 @@ div #contacto_form {
   align-items: start;
   padding-bottom: 48px;
 }
+@media screen and (max-width: 1024px) {
+  div #contacto_form {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+    margin-top: 148px;
+  }
+}
+@media screen and (max-width: 768px) {
+  div #contacto_form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    height: auto;
+    width: 100dvw;
+    row-gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 24px;
+  }
+}
 
 div #contacto_botones {
   display: flex;
   flex-direction: row;
   gap: 32px;
 }
+@media screen and (max-width: 768px) {
+  div #contacto_botones {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
 
 div #formulario .section_right {
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  div #formulario .section_right {
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+  }
+}
+
+div #features {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 24px;
+}
+@media screen and (max-width: 768px) {
+  div #features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+div #tabla_precios {
+  grid-area: servicios;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  margin: 0px 48px;
+  max-height: auto;
+}
+div #tabla_precios .precio {
+  padding-top: 24px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  div #tabla_precios .precio {
+    padding-top: 24px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  div #tabla_precios {
+    max-width: 1024px;
+    margin: auto;
+    margin: 0px 48px;
+    align-items: stretch;
+    justify-content: center;
+  }
+  div #tabla_precios ol, div #tabla_precios ul {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 768px) {
+  div #tabla_precios ol, div #tabla_precios ul {
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  div #tabla_precios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    max-height: auto;
+  }
 }
 
 .boton_principal {
@@ -337,6 +663,7 @@ div #formulario .section_right {
 }
 
 .card {
+  position: static;
   align-items: center;
   max-width: 328px;
   min-width: 300px;
@@ -347,9 +674,10 @@ div #formulario .section_right {
   box-shadow: 0px 2px 16px rgba(1, 27, 26, 0.12);
 }
 .card:hover {
-  background-color: #e5e8e8;
+  background-color: #fafafa;
   border: 0px;
   font-weight: 600;
+  box-shadow: 0px 4px 24px rgba(1, 27, 26, 0.08);
 }
 .card img {
   max-width: 280px;
@@ -360,6 +688,11 @@ div #formulario .section_right {
   display: flex;
   align-items: center;
   margin: 12px 0;
+}
+@media screen and (max-width: 768px) {
+  .icon_tag {
+    margin: 8px 0;
+  }
 }
 
 .solo_tag {
@@ -373,11 +706,30 @@ div #formulario .section_right {
   display: flex;
   gap: 32px;
 }
+@media screen and (max-width: 768px) {
+  .features_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+  }
+}
 
 .features_solo {
   display: flex;
   gap: 32px;
   padding-bottom: 48px;
+}
+@media screen and (max-width: 768px) {
+  .features_solo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-left: 0px;
+    padding-bottom: 24px;
+  }
 }
 
 .seccion_bg_color {

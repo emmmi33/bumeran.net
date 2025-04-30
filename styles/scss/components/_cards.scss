@@ -2,6 +2,7 @@
 
 // Card
 .card {
+    position: static;
     align-items: center;
     max-width: 328px;
     min-width: 300px;
@@ -15,10 +16,11 @@
     box-shadow: var.$sombra;
 
     &:hover {
-        background-color: var.$gray_10;
+        background-color: var.$gray_2;
         border: 0px;
         font-weight: 600;
-      }
+        box-shadow: var.$sombra_hover;
+    }
 
     img {
         max-width: 280px; 

@@ -21,9 +21,9 @@ $component_margin: 16px 0px;
     a {
        &:hover {
         background-color: var.$main_text;
-    color: var.$main_button;
+        color: var.$main_button;
   
-    font-weight: 800;
+        font-weight: 800;
        } 
     }
 }

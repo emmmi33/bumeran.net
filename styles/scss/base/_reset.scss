@@ -13,6 +13,11 @@ ul {
   
   li img {
     margin-right: 12px;
+
+    // hasta 768px
+    @media screen and (max-width: 768px) {
+      margin-right: 8px;  
+    }
   }
 }
 

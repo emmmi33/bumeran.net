@@ -17,10 +17,9 @@ footer {
             li {
                 padding: 8px;
             }
-
             a {
                 color: var.$main_bg;
-                &hover {
+                &:hover {
                 color: var.$light_bg;
                 }
             }

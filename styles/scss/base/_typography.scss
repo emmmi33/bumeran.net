@@ -44,17 +44,17 @@ p {
   font-weight: 400;
   padding-block-start: 8px;
   padding-block-end: 8px;
-}
 
-// Links
-a {
-  color: var.$main_text;
-  font-weight: 600;
-  
-  &:hover {
-      font-weight: 800;
+  a {
+    color: var.$main_button;
+    font-weight: 600;
+    
+    &:hover {
+        font-weight: 800;
+    }
   }
 }
+
 
 // Label formulario
 label {

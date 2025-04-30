@@ -63,12 +63,11 @@ p {
   padding-block-start: 8px;
   padding-block-end: 8px;
 }
-
-a {
-  color: #011b1a;
+p a {
+  color: #ffbf69;
   font-weight: 600;
 }
-a:hover {
+p a:hover {
   font-weight: 800;
 }
 
@@ -129,7 +128,7 @@ footer nav ul li {
 footer nav ul a {
   color: #ffffff;
 }
-footer nav ul ahover {
+footer nav ul a:hover {
   color: #e7f9f8;
 }
 
@@ -140,6 +139,171 @@ footer nav ul ahover {
   padding: 12px 12px;
   margin-left: 48px;
   margin-right: 48px;
+}
+
+div #grid {
+  display: grid;
+  max-width: 100dvw;
+  max-height: 100vh;
+  grid-template-areas: "header header" "principal principal" "quienes_somos quienes_somos" "trabajos trabajos" "servicios servicios" "contacto contacto" "footer footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr auto;
+  padding: 0 auto;
+}
+
+.section_left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 512px;
+  padding-left: 0px 24px;
+}
+.section_left h3 {
+  text-align: left;
+}
+
+.section_right {
+  align-items: center;
+  max-width: 512px;
+  padding: 0px 24px;
+}
+.section_right h3 {
+  text-align: center;
+}
+
+.img_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img_section img #img_banner {
+  display: flex;
+  align-items: flex-end;
+}
+
+section #principal {
+  grid-area: principal;
+  display: grid;
+  height: 100dvh;
+  grid-template-areas: "section_left section_right";
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 24px;
+  justify-content: center;
+  background-image: url(../img/img_background.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+section #principal h1 {
+  text-align: center;
+}
+
+#interna_ppal {
+  grid-area: principal;
+  max-width: 100%;
+  max-height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 148px 48px 0px;
+}
+
+div #quienes_somos {
+  grid-area: quienes_somos;
+  display: grid;
+  grid-template-areas: "section_left section_right";
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 24px;
+  padding: 48px 0px 24px;
+  justify-content: center;
+  align-items: start;
+  justify-items: center;
+}
+div #quienes_somos .section_left {
+  align-content: center;
+}
+div #quienes_somos .section_right {
+  align-content: center;
+}
+
+#quienes_somos_interna {
+  grid-area: quienes_somos;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+div #trabajos {
+  grid-area: trabajos;
+  margin: 0px 48px 48px;
+}
+
+div #trabajos_card {
+  grid-area: trabajos;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 32px;
+  margin: 24px 24px;
+}
+
+div #servicios {
+  grid-area: servicios;
+  display: grid;
+  grid-template-areas: "section_left section_right";
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 24px;
+  justify-content: center;
+  align-items: start;
+  padding: 48px 48px;
+}
+div #servicios .section_left {
+  align-content: center;
+}
+div #servicios .section_right {
+  align-content: center;
+}
+
+div #servicios_interna {
+  grid-area: servicios;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 48px;
+}
+
+div #contacto {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 48px;
+}
+
+div #contacto_form {
+  grid-area: contacto;
+  display: grid;
+  grid-template-areas: "section_left section_right";
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  justify-content: center;
+  align-items: start;
+  padding-bottom: 48px;
+}
+
+div #contacto_botones {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+div #formulario .section_right {
+  display: flex;
 }
 
 .boton_principal {
@@ -214,6 +378,47 @@ footer nav ul ahover {
   display: flex;
   gap: 32px;
   padding-bottom: 48px;
+}
+
+.seccion_bg_color {
+  background-color: #e5e8e8;
+}
+
+.seccion_bg_blanco {
+  background-color: #ffffff;
+}
+
+.section_center {
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #e5e8e8;
+  border: 1px solid #e5e8e8;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.formulario_input_label {
+  margin: 12px 0;
+}
+.formulario_input_label input {
+  border: 1px solid #6b7676;
+  border-radius: 4px;
+  padding: 4px 16px;
+}
+.formulario_input_label textarea {
+  border: 1px solid #6b7676;
+  border-radius: 4px;
+  padding: 4px 16px;
+  margin: 12px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

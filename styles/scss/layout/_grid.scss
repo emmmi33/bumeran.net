@@ -1,0 +1,220 @@
+// Body
+div #grid {
+    display: grid;
+    max-width: 100dvw;
+    max-height: 100vh;
+  
+    grid-template-areas:
+      "header header"
+      "principal principal"
+      "quienes_somos quienes_somos"
+      "trabajos trabajos"
+      "servicios servicios"
+      "contacto contacto"
+      "footer footer";
+
+    grid-template-columns: 1fr 1fr;
+  
+    grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr auto;
+  
+    padding: 0 auto;
+}
+
+// Sección izquierda
+.section_left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  
+    max-width: 512px;
+  
+    padding-left: 0px 24px;
+
+    h3 {
+        text-align: left;
+    }
+}
+
+// Sección derecha
+.section_right {
+    align-items: center;
+    max-width: 512px;
+  
+    padding: 0px 24px;
+
+    h3 {
+        text-align: center;
+    }
+}
+
+.img_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img #img_banner {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+// Sección principal
+section #principal {
+    grid-area: principal;
+    display: grid;
+    height: 100dvh;
+  
+    grid-template-areas: "section_left section_right";
+  
+    grid-template-columns: 1fr 1fr;
+  
+    column-gap: 32px;
+    row-gap: 24px;
+  
+    justify-content: center;
+  
+    background-image: url(../img/img_background.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+// Sección principal pagina interna
+#interna_ppal {
+    grid-area: principal;
+    max-width: 100%;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+    margin: 148px 48px 0px;
+}
+
+// Quienes somos principal
+div #quienes_somos {
+    grid-area: quienes_somos;
+    display: grid;
+    grid-template-areas: "section_left section_right";
+  
+    grid-template-columns: 1fr 1fr;
+  
+    column-gap: 32px;
+    row-gap: 24px;
+    padding: 48px 0px 24px;
+  
+    justify-content: center;
+    align-items: start;
+    justify-items: center;
+
+    .section_left {
+        align-content: center;
+    }
+
+    .section_right {
+        align-content: center;
+    }
+}
+
+// Quienes somos interna
+#quienes_somos_interna {
+    grid-area: quienes_somos;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+// Trabajos principal
+div #trabajos {
+    grid-area: trabajos;
+  
+    margin: 0px 48px 48px;
+}
+
+div #trabajos_card {
+    grid-area: trabajos;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+  
+    gap: 32px;
+    margin: 24px 24px;
+}
+
+// Servicios principal
+div #servicios {
+    grid-area: servicios;
+    display: grid;
+    grid-template-areas: "section_left section_right";
+  
+    grid-template-columns: 1fr 1fr;
+  
+    column-gap: 32px;
+    row-gap: 24px;
+  
+    justify-content: center;
+    align-items: start;
+    padding: 48px 48px;
+
+    .section_left {
+        align-content: center;
+    }
+
+    .section_right {
+        align-content: center;
+    }
+}
+
+// Servicios interna
+  div #servicios_interna {
+    grid-area: servicios;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    padding-bottom: 48px;
+}
+
+// Contacto principal
+div #contacto {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 48px 48px;
+}
+
+// Contacto interna
+div #contacto_form {
+    grid-area: contacto;
+    display: grid;
+    grid-template-areas:
+    "section_left section_right";
+    
+    grid-template-columns: 1fr 1fr;
+  
+    column-gap: 32px;
+  
+    justify-content: center;
+    align-items: start;
+    padding-bottom: 48px;
+}
+
+div #contacto_botones {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+  
+div #formulario .section_right {
+    display: flex;
+}
+  
+  

@@ -1,0 +1,52 @@
+
+@use '../abstracts/variables'as var;
+@use '../base/typography' as *;
+
+$component_padding: 8px 24px;
+$component_radius: 8px;
+$component_margin: 16px 0px;
+
+// Boton principal
+.boton_principal {
+    background-color: var.$main_button;
+    color: var.$main_text;
+  
+    border-radius: $component_radius;
+    padding: $component_padding;
+    margin-block: $component_margin;
+      
+    font-family: $font_family;
+    font-weight: 600;
+
+    a {
+       &:hover {
+        background-color: var.$main_text;
+    color: var.$main_button;
+  
+    font-weight: 800;
+       } 
+    }
+}
+
+// Boton secundario
+.boton_secundario {
+    color: var.$main_text;
+  
+    border: 2px solid var.$main_button;
+    border-radius: $component_radius;
+    padding: $component_padding;
+    margin-block: $component_margin;
+      
+    font-family: $font_family;
+    font-weight: 600;
+
+    a {
+        &:hover {
+            color: var.$main_button;
+            border: 2px solid var.$main_button;
+  
+            font-weight: 800;
+        }
+    }
+}
+  

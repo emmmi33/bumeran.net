@@ -1,0 +1,40 @@
+@use '../abstracts/variables'as var;
+@use '../base/typography' as *;
+
+footer {
+    color: var.$main_bg;
+    background-color: var.$main_text;
+    font-family: $font_family;
+    grid-area: footer;
+    min-width: 100vw;
+
+    nav {
+        ul {
+            display: flex;
+            align-content: flex-end;
+            list-style-type: none;
+
+            li {
+                padding: 8px;
+            }
+
+            a {
+                color: var.$main_bg;
+                &hover {
+                color: var.$light_bg;
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px;
+
+    margin-left: 48px;
+    margin-right: 48px;
+}
+

@@ -1,0 +1,20 @@
+@use '../abstracts/variables.scss' as var;
+
+// Card
+.card {
+    align-items: center;
+    max-width: 328px;
+    min-width: 300px;
+
+    padding: 16px;
+    margin: 16px;
+
+    border-radius: 8px;
+
+    background-color: var.$main_bg;
+    box-shadow: var.$sombra;
+
+    img {
+        max-width: 280px; 
+    }
+}

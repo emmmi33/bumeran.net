@@ -1,0 +1,78 @@
+@use '../abstracts/variables.scss' as var;
+
+$font_family: "Plus Jakarta Sans", sans-serif;
+
+// Titulos
+h1 {
+    color: var.$main_title;
+    font-family: $font_family;
+    font-size: 48px;
+    font-weight: 600;
+    padding-block-end: 24px;
+}
+  
+h2 {
+  color: var.$main_text;
+  font-family: $font_family;
+  font-size: 32px;
+  font-weight: 600;
+  padding-block-end: 24px;
+}
+
+h3 {
+  color: var.$main_text;
+  font-family: $font_family;
+  font-size: 24px;
+  font-weight: 600;
+  padding-block-end: 24px;
+}
+
+h4 {
+  color: var.$main_title;
+  font-family: $font_family;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-block-end: 24px;
+}
+
+// Parrafo
+p {
+  color: var.$main_text;
+  font-family: $font_family;
+  font-size: 16px;
+  font-weight: 400;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
+}
+
+// Links
+a {
+  color: var.$main_text;
+  font-weight: 600;
+  
+  &:hover {
+      font-weight: 800;
+  }
+}
+
+// Label formulario
+label {
+  color: var.$main_text;
+  font-family: $font_family;
+  font-size: 16px;
+}
+
+// Input formulario
+input {
+  color: var.$gray_60;
+  font-family: $font_family;
+  font-size: 16px;
+}
+
+//Textarea formulario
+textarea {
+  color: var.$gray_60;
+  font-family: $font_family;
+  font-size: 16px;
+}

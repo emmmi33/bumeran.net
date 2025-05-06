@@ -20,5 +20,10 @@ header {
     div #header {
         padding: 0px 48px;
     }
+
+    //más de 1024px
+    @media screen and (max-width: 1024px) {
+        max-width: 100vw;
+    }
 }
    

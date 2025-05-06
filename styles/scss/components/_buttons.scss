@@ -10,6 +10,7 @@ $component_margin: 16px 0px;
 .boton_principal {
     background-color: var.$main_button;
     color: var.$main_text;
+    box-shadow:var.$sombra;
   
     border-radius: $component_radius;
     padding: $component_padding;
@@ -18,19 +19,22 @@ $component_margin: 16px 0px;
     font-family: $font_family;
     font-weight: 600;
 
-    a {
-       &:hover {
-        background-color: var.$main_text;
-        color: var.$main_button;
-  
-        font-weight: 800;
-       } 
-    }
+    transition: background-color 0.4s, font-weight 0.2s, box-shadow 0.2s;
+
+    &:hover {
+    background-color: scale-color(var.$main_button, $lightness: -15%);
+    color: var.$main_text; 
+    box-shadow: var.$sombra_hover;
+
+    font-weight: 800;
+    } 
 }
 
 // Boton secundario
 .boton_secundario {
-    color: var.$main_text;
+    background-color: var.$gray_2;
+    color: var.$gray_60;
+    box-shadow: var.$sombra;
   
     border: 2px solid var.$main_button;
     border-radius: $component_radius;
@@ -40,13 +44,13 @@ $component_margin: 16px 0px;
     font-family: $font_family;
     font-weight: 600;
 
-    a {
-        &:hover {
-            color: var.$main_button;
-            border: 2px solid var.$main_button;
-  
-            font-weight: 800;
-        }
+    transition: background-color 0.4s, font-weight 0.2s, box-shadow 0.2s;
+
+    &:hover {
+    background-color: scale-color(var.$main_button, $lightness: 80%);
+    color: var.$main_text;
+    box-shadow: var.$sombra_hover;
+    border: 2px solid var.$main_button;
     }
 }
   

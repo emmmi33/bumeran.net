@@ -27,12 +27,15 @@ footer {
                 }
 
             li {
-                padding: 8px;
-            }
-            a {
                 color: var.$main_bg;
+                padding: 8px;
+                
+                font-weight: 400;
+
                 &:hover {
-                color: var.$light_bg;
+                    color: var.$light_title;
+                    
+                    font-weight: 600;
                 }
             }
         }

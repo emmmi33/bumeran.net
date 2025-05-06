@@ -33,7 +33,7 @@ $component_margin: 16px 0px;
 // Boton secundario
 .boton_secundario {
     background-color: var.$gray_2;
-    color: var.$gray_60;
+    color: var.$main_text;
     box-shadow: var.$sombra;
   
     border: 2px solid var.$main_button;
@@ -50,7 +50,9 @@ $component_margin: 16px 0px;
     background-color: scale-color(var.$main_button, $lightness: 80%);
     color: var.$main_text;
     box-shadow: var.$sombra_hover;
-    border: 2px solid var.$main_button;
+    border: 2px solid scale-color(var.$main_button, $lightness: 80%);
+
+    font-weight: 800;
     }
 }
   

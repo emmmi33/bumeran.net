@@ -1,6 +1,6 @@
 @use '../abstracts/variables' as var;
 
-// Secciones fondo
+// Secciones fondo color
 .seccion_bg_color {
     background-color: var.$gray_10;
 }
@@ -8,6 +8,8 @@
 .seccion_bg_blanco {
     background-color: var.$main_bg;
 }
+
+
 
 // Sección central
 .section_center {
@@ -20,6 +22,10 @@
 
     &.banner {
      margin-top: 148px;
+    }
+
+    &.bg_gradient {
+        background: linear-gradient(0deg, rgba(255, 223, 180, 1) 0%, rgba(255, 255, 255, 1) 85%);
     }
 
 }

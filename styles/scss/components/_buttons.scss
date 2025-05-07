@@ -14,7 +14,7 @@ $component_margin: 16px 0px;
   
     border-radius: $component_radius;
     padding: $component_padding;
-    margin-block: $component_margin;
+    margin: $component_margin;
       
     font-family: $font_family;
     font-weight: 600;
@@ -47,7 +47,7 @@ $component_margin: 16px 0px;
     border: 2px solid var.$main_button;
     border-radius: $component_radius;
     padding: $component_padding;
-    margin-block: $component_margin;
+    margin: $component_margin;
       
     font-family: $font_family;
     font-weight: 600;

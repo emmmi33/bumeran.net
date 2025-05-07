@@ -68,14 +68,35 @@ p {
   padding-block-start: 8px;
   padding-block-end: 8px;
   margin-bottom: 8px;
-
   a {
-    color: var.$main_button;
-    font-weight: 600;
+    color: var.$main_title;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+  
+    transition: color 0.4s;
     
-    &:hover {
-        font-weight: 800;
+    &:active {
+        color: var.$light_title;
     }
+  }
+}
+
+#footer_link a {
+  color: var.$main_bg;
+  font-size: 16px;
+  font-weight: 600;
+  
+  padding: 8px;
+
+  transition: color 0.2s;
+
+  &:hover {
+    color: var.$light_title;
+  }
+
+  &:active {
+    color: var.$main_title;
   }
 }
 

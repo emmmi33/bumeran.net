@@ -25,19 +25,7 @@ footer {
                     flex-direction: column;
                     align-items: center;
                 }
-
-            li {
-                color: var.$main_bg;
-                padding: 8px;
                 
-                font-weight: 400;
-
-                &:hover {
-                    color: var.$light_title;
-                    
-                    font-weight: 600;
-                }
-            }
         }
     }
 }
@@ -59,4 +47,3 @@ footer {
         padding: 12px 12px;  
     }
 }
-

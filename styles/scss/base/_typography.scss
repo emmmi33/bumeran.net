@@ -68,20 +68,31 @@ p {
   padding-block-start: 8px;
   padding-block-end: 8px;
   margin-bottom: 8px;
+  
   a {
     color: var.$main_title;
-    font-size: 16px;
-    font-weight: 400;
     text-decoration: underline;
-  
-    transition: color 0.4s;
-    
-    &:active {
-        color: var.$light_title;
-    }
   }
 }
 
+// Links header
+a.nav-link {
+  color: var.$gray_60;
+
+  transition: color 0.2s; text-decoration: 0.2s;
+
+  &:hover {
+    color: var.$light_title;
+    text-decoration: underline;
+  }
+}
+
+a.active {
+    color: var.$main_title;
+    font-weight: 600;
+}
+
+// Links footer
 #footer_link a {
   color: var.$main_bg;
   font-size: 16px;
@@ -89,10 +100,11 @@ p {
   
   padding: 8px;
 
-  transition: color 0.2s;
+  transition: color 0.2s; text-decoration: 0.2s;
 
   &:hover {
     color: var.$light_title;
+    text-decoration: underline;
   }
 
   &:active {

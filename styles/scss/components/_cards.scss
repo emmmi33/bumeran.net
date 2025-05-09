@@ -15,12 +15,11 @@
     background-color: var.$main_bg;
     box-shadow: var.$sombra;
 
-    transition: background-color 0.4s, font-weight 0.2s, box-shadow 0.2s;
+    transition: border-color 0.2s, box-shadow 0.2s;
 
     &:hover {
-        background-color: var.$gray_2;
-        border: 0px;
-        font-weight: 600;
+        border-color: var.$gray_2;
+        border: 2px;
         box-shadow: var.$sombra_hover;
 
         cursor: pointer;
@@ -28,5 +27,9 @@
 
     img {
         max-width: 280px; 
+    }
+
+    p {
+        max-width: 280px;
     }
 }

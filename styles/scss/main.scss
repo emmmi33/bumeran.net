@@ -1,11 +1,17 @@
+// Base
 @use './base/reset.scss';
-@use './layout/grid';
 @use './abstracts/variables';
 @use './base/typography';
+
+// Layout
+@use './layout/grid';
 @use './layout/header';
 @use './layout/footer';
+@use './layout/seccion';
+@use './layout/formulario';
+
+// Components
 @use './components/buttons';
 @use './components/cards';
 @use './components/lists';
-@use './layout/seccion';
-@use './layout/formulario';
+

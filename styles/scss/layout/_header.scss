@@ -11,6 +11,7 @@ header {
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
 
     div #header {
         padding: 0px 48px;
@@ -19,6 +20,14 @@ header {
     //más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 100vw;
+    }
+
+    @media screen and (max-width: 768px) {
+        a.navbar-brand {
+            img {
+                width: 170px;
+            }
+        }
     }
 }
    

@@ -6,9 +6,9 @@
 div #grid {
     display: grid;
     max-width: 100dvw;
-    max-height: 100vh;
   
-    grid-template-areas: "header header" "principal principal" "quienes_somos quienes_somos" "trabajos trabajos" "servicios servicios" "contacto contacto" "footer footer";
+    grid-template-areas: 
+    "header header" "principal principal" "quienes_somos quienes_somos" "trabajos trabajos" "servicios servicios" "contacto contacto" "footer footer";
 
     grid-template-columns: 1fr 1fr;
   
@@ -34,18 +34,13 @@ div #grid {
 // Sección principal
 section #principal {
     grid-area: principal;
+    max-width: 1024px;
+    height: 100vh;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
   
-    margin-top: 132px;
-    column-gap: 32px;
-    row-gap: 24px;
-  
-    justify-content: center;
-  
-    background-image: url(../img/img_background.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
+    margin: 0px 48px;
 
     h1 {
         text-align: center;
@@ -74,19 +69,19 @@ section #principal {
 // Sección principal pagina interna
 section #interna_ppal {
     grid-area: principal;
-    max-width: 100%;
-    max-height: auto;
+    max-width: 1024px;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
   
-    margin: 132px 48px 0px;
+    margin: 0px 48px;
 
     // más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
         margin: auto 48px;
-        align-items: center
+        align-items: start
     }
 
     // hasta 768px
@@ -95,15 +90,15 @@ section #interna_ppal {
         flex-direction: column;
         justify-content: flex-start;
         height: 100dvh;
-        margin-top: 132px;
+        margin-top: 148px;
 
         row-gap: 16px;
     }
 }
 
-// Quienes somos principal
-div #quienes_somos {
-    grid-area: quienes_somos;
+// Principal hero
+div #principal_hero {
+    grid-area: principal;
     display: grid;
     grid-template-areas: "section_left section_right";
   
@@ -111,7 +106,7 @@ div #quienes_somos {
   
     column-gap: 32px;
     row-gap: 24px;
-    padding: 48px 0px 24px;
+    padding: 48px;
   
     justify-content: center;
     align-items: start;
@@ -128,7 +123,61 @@ div #quienes_somos {
     // más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
-        margin: auto;
+        margin: 48px 0;
+        align-items: center;
+    }
+
+    // hasta 768px
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100dvw;
+
+        row-gap: 16px;
+        padding: 24px 0px;
+        margin-top: 120px;
+
+        justify-content: center;
+        align-items: center;
+
+        .section_right {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+// Quienes somos principal
+div #quienes_somos {
+    grid-area: quienes_somos;
+    display: grid;
+    grid-template-areas: "section_left section_right";
+  
+    grid-template-columns: 1fr 1fr;
+  
+    column-gap: 32px;
+    row-gap: 24px;
+    padding: 48px;
+  
+    justify-content: center;
+    align-items: start;
+    justify-items: center;
+
+    .section_left {
+        align-content: center;
+    }
+
+    .section_right {
+        align-content: center;
+    }
+
+    // más de 1024px
+    @media screen and (max-width: 1024px) {
+        max-width: 1024px;
+        margin: 48px 0;
         align-items: center;
     }
 
@@ -159,7 +208,8 @@ div #quienes_somos_interna {
     grid-area: quienes_somos;
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 100dvw;
+    margin: auto;
   
     // hasta 768px
     @media screen and (max-width: 768px) {
@@ -171,7 +221,6 @@ div #quienes_somos_interna {
             flex-direction: column;
             align-items: center;
             height: auto;
-            width: 100dvw;
         
             padding:24px 16px;
         }
@@ -181,7 +230,6 @@ div #quienes_somos_interna {
             flex-direction: column-reverse;
             align-items: center;
             height: auto;
-            width: 100dvw;
         
             padding:24px 16px;
         }
@@ -197,7 +245,7 @@ div #trabajos {
     // más de 1024px
     @media screen and (max-width: 1024px){
         max-width: 1024px;
-        margin: auto;
+        margin: 48px;
         align-items: center;
     }
 
@@ -218,12 +266,14 @@ div #trabajos_card {
     justify-content: center;
   
     gap: 32px;
-    margin: 24px 24px;
+    padding: 24px 48px;
 
     // más de 1024px
     @media screen and (max-width: 1024px) {
         align-items: stretch;
         justify-content: center;
+
+        gap: 8px;
     }
 
     // hasta 768px
@@ -233,7 +283,7 @@ div #trabajos_card {
         align-items: center;
         justify-content: center;
 
-        gap: 16px;
+        gap: 8px;
     }
 }
 
@@ -317,7 +367,7 @@ div #contacto {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+  
     padding: 48px 48px;
 
     // más de 1024px
@@ -351,6 +401,9 @@ div #contacto_form {
     justify-content: center;
     align-items: start;
     padding-bottom: 48px;
+    margin: 148px;
+
+    height: 100vh;
 
     // más de 1024px
     @media screen and (max-width: 1024px) {

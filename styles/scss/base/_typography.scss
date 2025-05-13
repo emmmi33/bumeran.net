@@ -68,14 +68,47 @@ p {
   padding-block-start: 8px;
   padding-block-end: 8px;
   margin-bottom: 8px;
-
+  
   a {
-    color: var.$main_button;
+    color: var.$main_title;
+    text-decoration: underline;
+  }
+}
+
+// Links header
+a.nav-link {
+  color: var.$gray_60;
+
+  transition: color 0.2s; text-decoration: 0.2s;
+
+  &:hover {
+    color: var.$light_title;
+    text-decoration: underline;
+  }
+}
+
+a.active {
+    color: var.$main_title;
     font-weight: 600;
-    
-    &:hover {
-        font-weight: 800;
-    }
+}
+
+// Links footer
+#footer_link a {
+  color: var.$main_bg;
+  font-size: 16px;
+  font-weight: 600;
+  
+  padding: 8px;
+
+  transition: color 0.2s; text-decoration: 0.2s;
+
+  &:hover {
+    color: var.$light_title;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: var.$main_title;
   }
 }
 

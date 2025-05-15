@@ -500,6 +500,7 @@ div #trabajos_card {
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
+  overflow-x: hidden;
   gap: 32px;
   padding: 24px 48px;
 }
@@ -516,7 +517,9 @@ div #trabajos_card {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
     gap: 8px;
+    padding: 0px;
   }
 }
 

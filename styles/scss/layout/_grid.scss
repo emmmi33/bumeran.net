@@ -240,12 +240,12 @@ div #quienes_somos_interna {
 div #trabajos {
     grid-area: trabajos;
   
-    margin: 0px 48px 48px;
+    margin: 0px 16px 16px;
 
     // más de 1024px
     @media screen and (max-width: 1024px){
         max-width: 1024px;
-        margin: 48px;
+        margin: 16px;
         align-items: center;
     }
 
@@ -254,7 +254,7 @@ div #trabajos {
         display: flex;
         flex-direction: column;
         
-        padding: 24px 16px;
+        padding: 16px 16px;
     }
 }
 
@@ -267,15 +267,13 @@ div #trabajos_card {
 
     overflow-x: hidden;
   
-    gap: 32px;
-    padding: 24px 48px;
+    gap: 16px;
+    margin-bottom: 24px;
 
     // más de 1024px
     @media screen and (max-width: 1024px) {
         align-items: stretch;
         justify-content: center;
-
-        gap: 8px;
     }
 
     // hasta 768px
@@ -285,8 +283,7 @@ div #trabajos_card {
         align-items: center;
         justify-content: center;
         overflow-x: hidden;
-
-        gap: 8px;
+        
         padding: 0px;
     }
 }

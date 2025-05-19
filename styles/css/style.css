@@ -32,12 +32,16 @@ h1 {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 48px;
   font-weight: 600;
-  padding-block-end: 24px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  margin: 0px;
 }
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 24px;
+    padding-block-start: 8px;
     padding-block-end: 8px;
+    margin: 0px;
   }
 }
 
@@ -46,12 +50,16 @@ h2 {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 32px;
   font-weight: 600;
-  padding-block-end: 24px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  margin: 0px;
 }
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 20px;
+    padding-block-start: 8px;
     padding-block-end: 8px;
+    margin: 0px;
     text-align: center;
   }
 }
@@ -61,12 +69,16 @@ h3 {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 24px;
   font-weight: 600;
-  padding-block-end: 24px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  margin: 0px;
 }
 @media screen and (max-width: 768px) {
   h3 {
     font-size: 20px;
+    padding-block-start: 8px;
     padding-block-end: 8px;
+    margin: 0px;
     text-align: center;
   }
 }
@@ -77,12 +89,16 @@ h4 {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  padding-block-end: 24px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  margin: 0px;
 }
 @media screen and (max-width: 768px) {
   h4 {
     font-size: 16px;
+    padding-block-start: 8px;
     padding-block-end: 8px;
+    margin: 0px;
     text-align: center;
   }
 }
@@ -94,11 +110,15 @@ p {
   font-weight: 400;
   padding-block-start: 8px;
   padding-block-end: 8px;
-  margin-bottom: 8px;
 }
 p a {
   color: #23807d;
   text-decoration: underline;
+}
+
+p.subtitle {
+  font-size: 24px;
+  font-weight: 600;
 }
 
 a.nav-link {
@@ -477,12 +497,12 @@ div #quienes_somos_interna {
 
 div #trabajos {
   grid-area: trabajos;
-  margin: 0px 48px 48px;
+  margin: 0px 16px 16px;
 }
 @media screen and (max-width: 1024px) {
   div #trabajos {
     max-width: 1024px;
-    margin: 48px;
+    margin: 16px;
     align-items: center;
   }
 }
@@ -490,7 +510,7 @@ div #trabajos {
   div #trabajos {
     display: flex;
     flex-direction: column;
-    padding: 24px 16px;
+    padding: 16px 16px;
   }
 }
 
@@ -501,14 +521,13 @@ div #trabajos_card {
   align-items: stretch;
   justify-content: center;
   overflow-x: hidden;
-  gap: 32px;
-  padding: 24px 48px;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 @media screen and (max-width: 1024px) {
   div #trabajos_card {
     align-items: stretch;
     justify-content: center;
-    gap: 8px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -518,7 +537,6 @@ div #trabajos_card {
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
-    gap: 8px;
     padding: 0px;
   }
 }

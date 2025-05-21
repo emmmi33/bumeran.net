@@ -259,9 +259,6 @@ div #trabajos {
 
 div #trabajos_card {
     grid-area: trabajos;
-    //display: flex;
-    //flex-direction: row;
-    //align-items: stretch;
     justify-content: center;
 
     overflow-x: hidden;
@@ -284,7 +281,7 @@ div #trabajos_card {
         justify-content: center;
         overflow-x: hidden;
         
-        padding: 0px;
+        padding-block-end: 24px;
     }
 }
 

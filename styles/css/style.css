@@ -561,7 +561,7 @@ div #trabajos_card {
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
-    padding: 0px;
+    padding-block-end: 24px;
   }
 }
 

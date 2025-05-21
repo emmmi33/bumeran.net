@@ -189,8 +189,7 @@ li {
   background-color: #ffffff;
   text-align: center;
   padding-top: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
+  margin-bottom: 24px;
 }
 .section_center.banner {
   margin-top: 148px;
@@ -497,12 +496,10 @@ div #quienes_somos_interna {
 
 div #trabajos {
   grid-area: trabajos;
-  margin: 0px 16px 16px;
 }
 @media screen and (max-width: 1024px) {
   div #trabajos {
     max-width: 1024px;
-    margin: 16px;
     align-items: center;
   }
 }
@@ -521,7 +518,7 @@ div #trabajos_card {
   align-items: stretch;
   justify-content: center;
   overflow-x: hidden;
-  gap: 16px;
+  overflow-y: hidden;
   margin-bottom: 24px;
 }
 @media screen and (max-width: 1024px) {
@@ -686,13 +683,13 @@ div #formulario .section_right {
   }
 }
 
-div #features {
+div .features {
   display: flex;
   justify-content: space-around;
   padding: 0px 24px;
 }
 @media screen and (max-width: 768px) {
-  div #features {
+  div .features {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -869,6 +866,7 @@ div #tabla_precios .precio {
 
 .features_icon {
   display: flex;
+  justify-content: center;
   gap: 32px;
 }
 @media screen and (max-width: 768px) {

@@ -1,206 +1,257 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bumeran.net</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="./img/joven_sonrie_mirando_smartphone_con_notificaciones_de_redes_sociales.webp"
+      type="image/webp"
+    />
+    <link rel="stylesheet" href="./styles/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bumeran.net</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="preload" fetchpriority="high" as="image"
-    href="./img/joven_sonrie_mirando_smartphone_con_notificaciones_de_redes_sociales.webp" type="image/webp">
-  <link rel="stylesheet" href="./styles/css/style.css" />
-</head>
-
-<body>
-  <div id="grid">
-    <header id="header" class="z-index">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
-            <img src="./img/logo_bumeran_color.webp" alt="Logo Bumeran" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/quienes_somos.html">Qui&eacute;nes somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/trabajos.html">Trabajos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-              </li>
-            </ul>
+  <body>
+    <div id="grid">
+      <header id="header" class="z-index">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+              <img src="./img/logo_bumeran_color.webp" alt="Logo Bumeran" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/quienes_somos.html"
+                    >Qui&eacute;nes somos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/trabajos.html">Trabajos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/servicios.html"
+                    >Servicios</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section id="principal" class="section_center banner bg_gradient">
+        <div id="principal_hero" class="container-sm">
+          <div class="section_left">
+            <h1>Tu página web profesional, sin complicaciones</h1>
+            <p class="subtitle">
+              Convierte tus seguidores en clientes con un sitio web que vende
+              por ti
+            </p>
+          </div>
+          <div class="section_right img_section">
+            <img
+              id="img_banner"
+              src="./img/joven_sonrie_mirando_smartphone_con_notificaciones_de_redes_sociales.webp"
+              alt="mujer sonrie mirando smartphone con notificaciones de google, instagram y facebook"
+            />
           </div>
         </div>
-      </nav>
-    </header>
-    <section id="principal">
-      <div id="principal_hero" class="section_center banner bg_gradient">
-        <div class="section_left">
-          <h1>Tu página web profesional, sin complicaciones</h1>
-          <p class="subtitle">
-            Convierte tus seguidores en clientes con un sitio web que vende por
-            ti
-          </p>
-        </div>
-        <div class="section_right img_section">
-          <img id="img_banner" src="./img/joven_sonrie_mirando_smartphone_con_notificaciones_de_redes_sociales.webp"
-            alt="mujer sonrie mirando smartphone con notificaciones de google, instagram y facebook" />
+      </section>
+
+      <div class="seccion_bg_color">
+        <div id="quienes_somos" class="container-sm">
+          <div class="section_left">
+            <img
+              src="./img/img_ppal_quienes_somos.webp"
+              alt="personas reunidas en torno a un computador discutiendo un diseño"
+            />
+          </div>
+
+          <div class="section_right">
+            <h2>Diseñamos para emprendedores reales</h2>
+            <p>
+              Somos un equipo de diseñadores web con énfasis en experiencia de
+              usuario, que entiende la realidad de los emprendedores digitales.
+              Sabemos que no tienes tiempo para lidiar con términos técnicos o
+              plataformas complicadas. Por eso, creamos páginas web funcionales,
+              atractivas y optimizadas para convertir visitantes en clientes.
+            </p>
+            <a class="boton_secundario" href="./pages/quienes_somos.html">
+              Descubre cómo destacar
+            </a>
+          </div>
         </div>
       </div>
-    </section>
 
-    <div id="quienes_somos" class="seccion_bg_color">
-      <div class="section_left">
-        <img src="./img/img_ppal_quienes_somos.webp"
-          alt="personas reunidas en torno a un computador discutiendo un diseño" />
-      </div>
-
-      <div class="section_right">
-        <h2>Diseñamos para emprendedores reales</h2>
-        <p>
-          Somos un equipo de diseñadores web con énfasis en experiencia de
-          usuario, que entiende la realidad de los emprendedores digitales.
-          Sabemos que no tienes tiempo para lidiar con términos técnicos o
-          plataformas complicadas. Por eso, creamos páginas web funcionales,
-          atractivas y optimizadas para convertir visitantes en clientes.
+      <div id="trabajos" class="seccion_bg_blanco section_center container-sm">
+        <h2>Sitios que atraen, convencen y venden</h2>
+        <p class="container-sm">
+          No se trata solo de hacer una página bonita. Diseñamos sitios
+          estratégicos que reflejan la esencia de tu marca y facilitan el
+          proceso de compra para tus clientes.
         </p>
-        <a class="boton_secundario" href="./pages/quienes_somos.html">
-          Descubre cómo destacar
-        </a>
-      </div>
-    </div>
-
-    <div id="trabajos" class="seccion_bg_blanco section_center container-sm">
-      <h2>Sitios que atraen, convencen y venden</h2>
-      <p class="container-sm">
-        No se trata solo de hacer una página bonita. Diseñamos sitios
-        estratégicos que reflejan la esencia de tu marca y facilitan el
-        proceso de compra para tus clientes.
-      </p>
-      <h3>Explora algunos de nuestros proyectos</h3>
-      <p>Y descubre cómo podemos darle a tu negocio la presencia digital que se merece.</p>
-
-      <div id="trabajos_card" class="container-sm">
-        <div class="card" data-aos="fade-up">
-          <h4>Camfive Colombia</h4>
-          <p class="subtitle">Sitio web de máquinas textiles</p>
-          <p>
-            Rediseño de sitio web y catálogo de máquinas con descripción y
-            fotos actualizada.
-          </p>
-          <img src="./img/img_trabajo_01.webp" alt="Página web para empresa de maquinaria textil" />
-        </div>
-
-        <div class="card" data-aos="fade-up">
-          <h4>Naomi Navarro</h4>
-          <p class="subtitle">Sitio web de marca personal</p>
-          <p>
-            Diseño de un sitio web en versión de escritorio y móvil, para
-            venta de maquinaria y repuestos.
-          </p>
-          <img src="./img/img_trabajo_02.webp" alt="Página web para computador y celular" />
-        </div>
-
-        <div class="card" data-aos="fade-up">
-          <h4>Comunidad de Bordado</h4>
-          <p class="subtitle">Landing page de cursos online</p>
-          <p>
-            Estructura de página de aterrizaje para capatar interesados en los
-            cursos online.
-          </p>
-          <img src="./img/img_trabajo_03.webp" alt="Landing page para venta de cursos online" />
-        </div>
-      </div>
-
-      <a class="boton_secundario" href="./pages/trabajos.html">
-        Explora nuestros trabajos
-      </a>
-    </div>
-
-    <div id="servicios" class="seccion_bg_color">
-      <div class="section_left">
-        <h2>El plan perfecto para tu negocio</h2>
+        <h3>Explora algunos de nuestros proyectos</h3>
         <p>
-          Sabemos que cada negocio es diferente, por eso ofrecemos planes
-          flexibles según lo que necesitas:
+          Y descubre cómo podemos darle a tu negocio la presencia digital que se
+          merece.
         </p>
-        <ul>
-          <li class="icon_tag">
-            <img src="./img/svg/checked.svg" alt="Incluye" />Landing Page:
-            Ideal para quienes quieren una presencia digital rápida y
-            efectiva.
-          </li>
-          <li class="icon_tag">
-            <img src="./img/svg/checked.svg" alt="Incluye" />Sitio Web
-            Corporativo: Para marcas que necesitan más secciones y
-            funcionalidades.
-          </li>
-          <li class="icon_tag">
-            <img src="./img/svg/checked.svg" alt="Incluye" />Tienda Online: Si
-            quieres vender directamente desde tu web, esta es la mejor opción.
-          </li>
-        </ul>
-        <a class="boton_secundario" href="./pages/servicios.html">
-          Elige tu plan ideal
+
+        <div id="trabajos_card" class="container-sm">
+          <div class="card" data-aos="fade-up">
+            <h4>Camfive Colombia</h4>
+            <p class="subtitle">Sitio web de máquinas textiles</p>
+            <p>
+              Rediseño de sitio web y catálogo de máquinas con descripción y
+              fotos actualizada.
+            </p>
+            <img
+              src="./img/img_trabajo_01.webp"
+              alt="Página web para empresa de maquinaria textil"
+            />
+          </div>
+
+          <div class="card" data-aos="fade-up">
+            <h4>Naomi Navarro</h4>
+            <p class="subtitle">Sitio web de marca personal</p>
+            <p>
+              Diseño de un sitio web en versión de escritorio y móvil, para
+              venta de maquinaria y repuestos.
+            </p>
+            <img
+              src="./img/img_trabajo_02.webp"
+              alt="Página web para computador y celular"
+            />
+          </div>
+
+          <div class="card" data-aos="fade-up">
+            <h4>Comunidad de Bordado</h4>
+            <p class="subtitle">Landing page de cursos online</p>
+            <p>
+              Estructura de página de aterrizaje para capatar interesados en los
+              cursos online.
+            </p>
+            <img
+              src="./img/img_trabajo_03.webp"
+              alt="Landing page para venta de cursos online"
+            />
+          </div>
+        </div>
+
+        <a class="boton_secundario" href="./pages/trabajos.html">
+          Explora nuestros trabajos
         </a>
       </div>
-      <div class="section_right">
-        <img src="./img/img_ppal_servicios.webp"
-          alt="2 computadores sobre un escritorio mostrando el progreso de un diseño" />
+
+      <div class="seccion_bg_color">
+        <div id="servicios" class="container-sm">
+          <div class="section_left">
+            <h2>El plan perfecto para tu negocio</h2>
+            <p>
+              Sabemos que cada negocio es diferente, por eso ofrecemos planes
+              flexibles según lo que necesitas:
+            </p>
+            <ul>
+              <li class="icon_tag">
+                <img src="./img/svg/checked.svg" alt="Incluye" />Landing Page:
+                Ideal para quienes quieren una presencia digital rápida y
+                efectiva.
+              </li>
+              <li class="icon_tag">
+                <img src="./img/svg/checked.svg" alt="Incluye" />Sitio Web
+                Corporativo: Para marcas que necesitan más secciones y
+                funcionalidades.
+              </li>
+              <li class="icon_tag">
+                <img src="./img/svg/checked.svg" alt="Incluye" />Tienda Online:
+                Si quieres vender directamente desde tu web, esta es la mejor
+                opción.
+              </li>
+            </ul>
+            <a class="boton_secundario" href="./pages/servicios.html">
+              Elige tu plan ideal
+            </a>
+          </div>
+          <div class="section_right">
+            <img
+              src="./img/img_ppal_servicios.webp"
+              alt="2 computadores sobre un escritorio mostrando el progreso de un diseño"
+            />
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div id="contacto" class="section_center">
-      <h2>Hablemos y crezcamos juntos</h2>
-      <p>
-        Si quieres dar el siguiente paso y llevar tu marca más allá de las
-        redes sociales, hablemos. Juntos crearemos un sitio web que te ayude a
-        vender más y mejor.
-      </p>
-      <a class="boton_principal" href="./pages/contacto.html">Obtén asesoría gratuita</a>
-    </div>
-
-    <footer>
-      <div id="footer">
-        <a href="./index.html">
-          <img src="./img/logo_bumeran_blanco.webp" alt="Logo Bumeran" />
-        </a>
-        <nav id="footer_link">
-          <ul>
-            <li><a href="./pages/quienes_somos.html">Quiénes somos</a></li>
-
-            <li><a href="./pages/trabajos.html">Trabajos</a></li>
-
-            <li><a href="./pages/servicios.html">Servicios</a></li>
-
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
+      <div id="contacto" class="section_center container-sm">
+        <h2>Hablemos y crezcamos juntos</h2>
+        <p>
+          Si quieres dar el siguiente paso y llevar tu marca más allá de las
+          redes sociales, hablemos. Juntos crearemos un sitio web que te ayude a
+          vender más y mejor.
+        </p>
+        <a class="boton_principal" href="./pages/contacto.html"
+          >Obtén asesoría gratuita</a
+        >
       </div>
-    </footer>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
 
+      <footer>
+        <div id="footer" class="container-sm">
+          <a href="./index.html">
+            <img src="./img/logo_bumeran_blanco.webp" alt="Logo Bumeran" />
+          </a>
+          <nav id="footer_link">
+            <ul>
+              <li><a href="./pages/quienes_somos.html">Quiénes somos</a></li>
+
+              <li><a href="./pages/trabajos.html">Trabajos</a></li>
+
+              <li><a href="./pages/servicios.html">Servicios</a></li>
+
+              <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

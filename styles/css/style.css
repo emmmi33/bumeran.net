@@ -234,7 +234,6 @@ li {
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  max-width: 512px;
   padding: 0px 24px;
 }
 .section_left h3 {
@@ -244,7 +243,6 @@ li {
 .section_right {
   grid-area: section_right;
   align-items: center;
-  max-width: 512px;
   padding: 0px 24px;
 }
 .section_right h3 {
@@ -312,10 +310,9 @@ footer nav ul {
 
 #footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 12px 12px;
-  margin: 0px 48px;
 }
 @media screen and (max-width: 768px) {
   #footer {
@@ -611,6 +608,8 @@ div #servicios_interna {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
+  max-width: 1024px;
   padding-bottom: 48px;
 }
 @media screen and (max-width: 1024px) {
@@ -636,6 +635,7 @@ div #contacto {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1024px;
   padding: 48px 48px;
 }
 @media screen and (max-width: 1024px) {

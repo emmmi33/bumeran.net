@@ -5,14 +5,19 @@
 .icon_tag {
     color: var.$main_text;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   
     margin: 12px 0;
+
+    img {
+        width: 32px;
+    }
 
     // hasta 768px
     @media screen and (max-width: 768px) {
         margin: 8px 0;
     }
+
 }
 
 // Lista sin íconos

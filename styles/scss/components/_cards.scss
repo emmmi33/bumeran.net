@@ -1,11 +1,12 @@
 @use '../abstracts/variables.scss' as var;
 
 // Card
+$card-height: 100%;
+
 .card {
     position: static;
     align-items: center;
-    max-width: 328px;
-    min-width: 300px;
+    height: $card-height;
 
     padding: 16px;
     margin: 8px;
@@ -26,10 +27,10 @@
     }
 
     img {
-        max-width: 280px; 
+        width: 100%; 
     }
 
     p {
-        max-width: 280px;
+        width: 100%;
     }
-}
+} 

@@ -36,6 +36,11 @@ h1 {
   padding-block-end: 12px;
   margin: 0px;
 }
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 56px;
+  }
+}
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 24px;
@@ -53,6 +58,11 @@ h2 {
   padding-block-start: 12px;
   padding-block-end: 12px;
   margin: 0px;
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 40px;
+  }
 }
 @media screen and (max-width: 768px) {
   h2 {
@@ -73,6 +83,11 @@ h3 {
   padding-block-end: 12px;
   margin: 0px;
 }
+@media screen and (min-width: 1200px) {
+  h3 {
+    font-size: 32px;
+  }
+}
 @media screen and (max-width: 768px) {
   h3 {
     font-size: 20px;
@@ -92,6 +107,11 @@ h4 {
   padding-block-start: 12px;
   padding-block-end: 12px;
   margin: 0px;
+}
+@media screen and (min-width: 1200px) {
+  h4 {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   h4 {
@@ -115,10 +135,20 @@ p a {
   color: #23807d;
   text-decoration: underline;
 }
+@media screen and (min-width: 1200px) {
+  p {
+    font-size: 20px;
+  }
+}
 
 p.subtitle {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
+}
+@media screen and (min-width: 1200px) {
+  p.subtitle {
+    font-size: 24px;
+  }
 }
 
 a.nav-link {
@@ -201,7 +231,7 @@ li {
 .section_left {
   grid-area: section_left;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   max-width: 512px;

@@ -12,6 +12,11 @@ h1 {
     padding-block-end: 12px;
     margin: 0px;
 
+  // más de 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 56px;
+  }
+
     @media screen and (max-width: 768px) {
       font-size: 24px;
       padding-block-start: 8px;
@@ -28,6 +33,11 @@ h2 {
   padding-block-start: 12px;
   padding-block-end: 12px;
   margin: 0px;
+
+  // más de 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 20px;
@@ -47,6 +57,11 @@ h3 {
   padding-block-end: 12px;
   margin: 0px;
 
+  // más de 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+  }
+
   @media screen and (max-width: 768px) {
     font-size: 20px;
     padding-block-start: 8px;
@@ -65,6 +80,11 @@ h4 {
   padding-block-start: 12px;
   padding-block-end: 12px;
   margin: 0px;
+
+  // más de 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 16px;
@@ -88,11 +108,21 @@ p {
     color: var.$main_title;
     text-decoration: underline;
   }
+
+  // más de 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 p.subtitle {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
+  
+  // más de 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+  }
 }
 
 // Links header

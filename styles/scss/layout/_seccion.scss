@@ -17,10 +17,9 @@
 
     text-align: center;
     padding: 24px 0px;
-    margin-bottom: 24px;
     
     &.banner {
-     margin-top: 148px;
+     margin-top: 48px;
     }
 
     &.bg_gradient {
@@ -56,6 +55,7 @@
     }
 }
 
+// Imágenes en secciones
 .img_section {
     display: flex;
     align-items: center;

@@ -19,7 +19,6 @@ div #grid {
     // más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 100dvw;
-        margin: auto;
         align-items: center;
     }
 
@@ -39,8 +38,6 @@ section #principal {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-  
-    margin: 0px 48px;
 
     h1 {
         text-align: center;
@@ -49,7 +46,6 @@ section #principal {
     // más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
-        margin: 132px auto auto;
         align-items: center; 
     }
 
@@ -123,7 +119,6 @@ div #principal_hero {
     // más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
-        margin: 48px 0;
         align-items: center;
     }
 
@@ -136,7 +131,6 @@ div #principal_hero {
 
         row-gap: 16px;
         padding: 24px 0px;
-        margin-top: 120px;
 
         justify-content: center;
         align-items: center;
@@ -177,7 +171,6 @@ div #quienes_somos {
     // más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
-        margin: 48px 0;
         align-items: center;
     }
 
@@ -311,7 +304,6 @@ div #servicios {
     // más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
-        margin: auto;
         align-items: center;        
     }
 
@@ -376,7 +368,6 @@ div #contacto {
     // más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
-        margin: auto;
         align-items: center;   
     }
 

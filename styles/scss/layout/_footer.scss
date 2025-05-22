@@ -32,11 +32,9 @@ footer {
 
 #footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 12px 12px;
-
-    margin: 0px 48px;
     
     // hasta 768px
     @media screen and (max-width: 768px) {

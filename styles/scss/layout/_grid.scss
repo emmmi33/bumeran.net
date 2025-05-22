@@ -19,7 +19,6 @@ div #grid {
     // más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 100dvw;
-        margin: auto;
         align-items: center;
     }
 
@@ -39,8 +38,6 @@ section #principal {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-  
-    margin: 0px 48px;
 
     h1 {
         text-align: center;
@@ -49,7 +46,6 @@ section #principal {
     // más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
-        margin: 132px auto auto;
         align-items: center; 
     }
 
@@ -123,7 +119,6 @@ div #principal_hero {
     // más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
-        margin: 48px 0;
         align-items: center;
     }
 
@@ -136,7 +131,6 @@ div #principal_hero {
 
         row-gap: 16px;
         padding: 24px 0px;
-        margin-top: 120px;
 
         justify-content: center;
         align-items: center;
@@ -177,7 +171,6 @@ div #quienes_somos {
     // más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
-        margin: 48px 0;
         align-items: center;
     }
 
@@ -239,41 +232,38 @@ div #quienes_somos_interna {
 // Trabajos principal
 div #trabajos {
     grid-area: trabajos;
+
+    padding: 24px;
   
-    margin: 0px 48px 48px;
 
     // más de 1024px
     @media screen and (max-width: 1024px){
-        max-width: 1024px;
-        margin: 48px;
+        max-width: 1024px;        
         align-items: center;
     }
 
     // hasta 768px
     @media screen and (max-width: 768px) {
         display: flex;
-        flex-direction: column;
-        
-        padding: 24px 16px;
+        flex-direction: column;        
+        padding: 16px 16px;
     }
 }
 
 div #trabajos_card {
     grid-area: trabajos;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
     justify-content: center;
-  
-    gap: 32px;
-    padding: 24px 48px;
 
-    // más de 1024px
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    padding: 24px 12px;
+    margin-bottom: 24px;
+
+    // hasta 1024px
     @media screen and (max-width: 1024px) {
         align-items: stretch;
         justify-content: center;
-
-        gap: 8px;
     }
 
     // hasta 768px
@@ -282,8 +272,9 @@ div #trabajos_card {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        gap: 8px;
+        overflow-x: hidden;
+        
+        padding-block-end: 24px;
     }
 }
 
@@ -313,7 +304,6 @@ div #servicios {
     // más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
-        margin: auto;
         align-items: center;        
     }
 
@@ -340,6 +330,9 @@ div #servicios {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
+
+    max-width: 1024px;
   
     padding-bottom: 48px;
 
@@ -367,13 +360,14 @@ div #contacto {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    max-width: 1024px;
   
     padding: 48px 48px;
 
     // más de 1024px
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
-        margin: auto;
         align-items: center;   
     }
 
@@ -454,7 +448,7 @@ div #formulario .section_right {
 }
 
 // Features
-div #features {
+div .features {
     display: flex;
     justify-content: space-around;
     padding: 0px 24px;
@@ -474,10 +468,9 @@ div #tabla_precios {
     align-items: flex-start;
     justify-content: center;
     gap: 16px;
-  
-    margin: 0px 48px;
-  
-    max-height: auto;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
 
     .precio {
         padding-top: 24px;
@@ -494,8 +487,6 @@ div #tabla_precios {
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
         margin: auto;
-
-        margin: 0px 48px;
         
         align-items: stretch;
         justify-content: center;
@@ -517,8 +508,6 @@ div #tabla_precios {
         align-items: center;
         justify-content: center;
         gap: 16px;
-
-        max-height: auto;
     }
 }
   

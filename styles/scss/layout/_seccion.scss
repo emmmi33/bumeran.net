@@ -16,12 +16,10 @@
     background-color: var.$main_bg;
 
     text-align: center;
-    padding-top: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
-
+    padding: 24px 0px;
+    
     &.banner {
-     margin-top: 148px;
+     margin-top: 48px;
     }
 
     &.bg_gradient {
@@ -34,11 +32,9 @@
 .section_left {
     grid-area: section_left;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-  
-    max-width: 512px;
   
     padding: 0px 24px;
 
@@ -51,7 +47,6 @@
 .section_right {
     grid-area: section_right;
     align-items: center;
-    max-width: 512px;
   
     padding: 0px 24px;
 
@@ -60,6 +55,7 @@
     }
 }
 
+// Imágenes en secciones
 .img_section {
     display: flex;
     align-items: center;

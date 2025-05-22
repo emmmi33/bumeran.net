@@ -8,11 +8,20 @@ h1 {
     font-family: $font_family;
     font-size: 48px;
     font-weight: 600;
-    padding-block-end: 24px;
+    padding-block-start: 12px;
+    padding-block-end: 12px;
+    margin: 0px;
+
+  // más de 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 56px;
+  }
 
     @media screen and (max-width: 768px) {
       font-size: 24px;
+      padding-block-start: 8px;
       padding-block-end: 8px;
+      margin: 0px;
     }   
 }
   
@@ -21,11 +30,20 @@ h2 {
   font-family: $font_family;
   font-size: 32px;
   font-weight: 600;
-  padding-block-end: 24px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  margin: 0px;
+
+  // más de 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 20px;
+    padding-block-start: 8px;
     padding-block-end: 8px;
+    margin: 0px;
     text-align: center;
   }
 }
@@ -35,11 +53,20 @@ h3 {
   font-family: $font_family;
   font-size: 24px;
   font-weight: 600;
-  padding-block-end: 24px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  margin: 0px;
+
+  // más de 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 20px;
+    padding-block-start: 8px;
     padding-block-end: 8px;
+    margin: 0px;
     text-align: center;
   }
 }
@@ -50,11 +77,20 @@ h4 {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  padding-block-end: 24px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  margin: 0px;
+
+  // más de 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 16px;
+    padding-block-start: 8px;
     padding-block-end: 8px;
+    margin: 0px;
     text-align: center;
   }
 }
@@ -67,11 +103,25 @@ p {
   font-weight: 400;
   padding-block-start: 8px;
   padding-block-end: 8px;
-  margin-bottom: 8px;
   
   a {
     color: var.$main_title;
     text-decoration: underline;
+  }
+
+  // más de 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+p.subtitle {
+    font-size: 20px;
+    font-weight: 600;
+  
+  // más de 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
   }
 }
 
@@ -140,4 +190,5 @@ li {
   font-family: $font_family;
   font-size: 16px;
   font-weight: 600;
+  text-align: left;
 }

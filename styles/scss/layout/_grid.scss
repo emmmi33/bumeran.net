@@ -71,8 +71,7 @@ section #interna_ppal {
     flex-direction: row;
     justify-content: flex-start;
 
-
-    // más de 1024px
+    // hasta 1024px
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
          align-items: start
@@ -84,7 +83,7 @@ section #interna_ppal {
         flex-direction: column;
         justify-content: flex-start;
         height: 100dvh;
-        margin-top: 148px;
+        margin-top: 120px;
 
         row-gap: 16px;
     }

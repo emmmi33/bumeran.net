@@ -1,13 +1,13 @@
-@use '../abstracts/variables'as var;
+@use '../abstracts/variables' as var;
 @use '../base/typography' as *;
 
 header {
     grid-area: header;
     background-color: var.$main_bg;
     font-family: $font_family;
-  
+
     box-shadow: var.$sombra;
-  
+
     position: fixed;
     width: 100vw;
     top: 0;
@@ -30,4 +30,3 @@ header {
         }
     }
 }
-   

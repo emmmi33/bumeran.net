@@ -17,9 +17,9 @@
 
     text-align: center;
     padding: 24px 0px;
-    
+
     &.banner {
-     margin-top: 48px;
+        margin-top: 64px;
     }
 
     &.bg_gradient {
@@ -35,7 +35,7 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-  
+
     padding: 0px 24px;
 
     h3 {
@@ -47,7 +47,7 @@
 .section_right {
     grid-area: section_right;
     align-items: center;
-  
+
     padding: 0px 24px;
 
     h3 {

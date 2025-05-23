@@ -1,11 +1,6 @@
 
 ![Logo](https://i.imgur.com/cdImtbI.png)
 
-<<<<<<< HEAD
-- 🌱 Libraries **Bootstrap**
-=======
->>>>>>> sass
-
 # Diseño de sitio web personal
 
 Este es mi proyecto final del curso de Desarrollo Web en [CoderHouse](https://www.coderhouse.com/).
@@ -39,10 +34,3 @@ I'm a creative designer with 10+ years of experience in Digital Communication, p
 [![linkedin](https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff)](https://www.linkedin.com/in/emi-tiji/)
 
 [![gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:emiliatiji@gmail.com)
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> sass
-

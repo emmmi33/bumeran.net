@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: solid 1px red;
 }
 
 ul {
@@ -150,6 +149,13 @@ p.subtitle {
   p.subtitle {
     font-size: 24px;
   }
+}
+
+p.label {
+  color: #011b1a;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
 }
 
 a.nav-link {
@@ -653,6 +659,7 @@ div #contacto_form {
   justify-content: center;
   align-items: start;
   padding-bottom: 48px;
+  margin-top: 120px;
   height: 100vh;
 }
 @media screen and (max-width: 1024px) {
@@ -660,7 +667,6 @@ div #contacto_form {
     max-width: 1024px;
     margin: auto;
     align-items: center;
-    margin-top: 148px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -771,18 +777,23 @@ div #tabla_precios .precio {
 }
 
 .formulario_input_label {
-  margin: 12px 0;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  height: auto;
 }
 .formulario_input_label input {
   border: 1px solid #6b7676;
   border-radius: 4px;
   padding: 4px 16px;
+  margin: 0px 12px;
 }
 .formulario_input_label textarea {
   border: 1px solid #6b7676;
   border-radius: 4px;
   padding: 4px 16px;
-  margin: 12px 0;
+  margin: 0px 12px;
 }
 
 .boton_principal {
@@ -863,7 +874,7 @@ div #tabla_precios .precio {
 .icon_tag {
   color: #011b1a;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin: 12px 0;
 }
 .icon_tag img {
@@ -887,7 +898,7 @@ div #tabla_precios .precio {
   justify-content: center;
   gap: 32px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .features_icon {
     display: flex;
     flex-direction: column;

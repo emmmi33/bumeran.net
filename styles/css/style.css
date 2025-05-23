@@ -747,12 +747,14 @@ div #tabla_precios .precio {
     align-items: stretch;
     justify-content: center;
   }
-  div #tabla_precios ol, div #tabla_precios ul {
+  div #tabla_precios ol,
+  div #tabla_precios ul {
     padding-left: 0;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 768px) {
-  div #tabla_precios ol, div #tabla_precios ul {
+  div #tabla_precios ol,
+  div #tabla_precios ul {
     padding-left: 0px;
   }
 }

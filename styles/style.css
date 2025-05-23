@@ -338,7 +338,7 @@ header a:hover {
   display: grid;
   grid-template-areas:
     "section_left section_right";
-  
+
   grid-template-columns: 1fr 1fr;
 
   column-gap: 32px;
@@ -612,7 +612,7 @@ li img {
   margin: 12px 0;
 }
 
-/* RESPONSIVE */ 
+/* RESPONSIVE */
 
 /* más de 1024px */
 @media screen and (max-width: 1024px) {
@@ -692,7 +692,8 @@ li img {
     justify-content: center;
   }
 
-  #tabla_precios ol, ul {
+  #tabla_precios ol,
+  ul {
     padding-left: 0;
   }
 
@@ -705,7 +706,7 @@ li img {
 
   footer {
     max-width: 100vw;
-  }  
+  }
 
   #footer {
     max-width: 1024px;
@@ -713,7 +714,7 @@ li img {
 
     align-items: center;
   }
-  
+
 }
 
 /* hasta 768px */
@@ -803,7 +804,7 @@ li img {
     height: auto;
     width: 100dvw;
 
-    padding:24px 16px;
+    padding: 24px 16px;
   }
 
   #quienes_somos_interna .seccion_bg_blanco {
@@ -813,7 +814,7 @@ li img {
     height: auto;
     width: 100dvw;
 
-    padding:24px 16px;
+    padding: 24px 16px;
   }
 
   #quienes_somos_interna {
@@ -825,7 +826,7 @@ li img {
   #trabajos {
     display: flex;
     flex-direction: column;
-    
+
     padding: 24px 16px;
   }
 
@@ -903,7 +904,7 @@ li img {
   footer {
     max-width: 100vw;
   }
-  
+
   #footer {
     display: flex;
     flex-direction: column;
